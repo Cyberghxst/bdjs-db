@@ -1,0 +1,201 @@
+[
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Deletes a variable from the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Table",
+                "description": "Local storage table.",
+                "required": false,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "deleteVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Filter all variables that met the condition.",
+        "parameters": [
+            {
+                "name": "Condition",
+                "description": "Condition to filter variables.",
+                "required": true,
+                "resolver": "String",
+                "value": "none",
+                "compile": false
+            },
+            {
+                "name": "Variable",
+                "description": "Variable name to load the results to.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Table",
+                "description": "Local storage table.",
+                "required": false,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "filterVars"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Get a timed variable from the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "getTimedVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Get a variable from the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Table",
+                "description": "Local storage table.",
+                "required": false,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "getVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Check if a timed variable exists in the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "hasTimedVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Check if the variable name exists in the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Table",
+                "description": "Local storage table.",
+                "required": false,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "hasVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Set a timed variable into the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Value",
+                "description": "Variable value.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Time",
+                "description": "Time for the variable to stay in the local storage.",
+                "required": true,
+                "resolver": "Number",
+                "value": "none"
+            }
+        ],
+        "name": "setTimedVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Set a variable into the local storage.",
+        "parameters": [
+            {
+                "name": "Name",
+                "description": "Variable name.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Value",
+                "description": "Variable value.",
+                "required": true,
+                "resolver": "String",
+                "value": "none"
+            },
+            {
+                "name": "Table",
+                "description": "Local storage table.",
+                "required": false,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "setVar"
+    },
+    {
+        "builders": false,
+        "injectable": false,
+        "description": "Returns the amount of variables in a table.",
+        "parameters": [
+            {
+                "name": "Table",
+                "description": "The variables table.",
+                "required": false,
+                "resolver": "String",
+                "value": "none"
+            }
+        ],
+        "name": "variableCount"
+    }
+]
