@@ -25,7 +25,7 @@ export class LocalStorage extends Plugin {
         });
 
         // Table management
-        (options.tables ?? []).push({ name: BDJS_TIMEOUT, mod: BDJS_TIMEOUT + '.json' });
+        (options?.tables ?? []).push({ name: BDJS_TIMEOUT, mod: BDJS_TIMEOUT + '.json' });
 
         // Plugin essentials
         this.#options = { timeoutsTable: '__bdjs__timeouts__', ...options }
@@ -38,16 +38,6 @@ export class LocalStorage extends Plugin {
 
         // Function loading
         this.load(join(__dirname, 'functions'), true)
-    }
-
-    /**
-     * Load variables into the client.
-     * @param data - Variable records.
-     * @param {string} [table="main"] - Table name.
-     * @returns {VariableManager}
-     */
-    variables(data: Record<string, any>, table = 'main') {
-        return this.#vars.fillTable(data, table)
     }
 
     /**
