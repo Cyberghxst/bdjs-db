@@ -1,6 +1,6 @@
 {
   "name": "bdjs-db",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A powerful plugin to bring BDJS local database support.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -36,7 +36,7 @@
     "url": "https://github.com/Cyberghxst/bdjs-db"
   },
   "dependencies": {
-    "bdjs": "github:Cyberghxst/bdjs",
+    "bdjs": "1.0.0-O",
     "collie-db": "^0.0.3",
     "ms": "^2.1.3"
   }

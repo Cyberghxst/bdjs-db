@@ -32,10 +32,6 @@ const client = new Bot({
     ]
 })
 
-storage.variables({
-    message: 'default_one'
-})
-
 client.commands.add({
     type: 'ready',
     code: `

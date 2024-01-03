@@ -8,6 +8,7 @@ dist/generators.d.ts
 dist/generators.js
 
 # Files
+.env
 .eslintrc.json
 .gitignore
 pnpm-lock.yaml
